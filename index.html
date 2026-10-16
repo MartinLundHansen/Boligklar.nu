@@ -1,4 +1,95 @@
-Boligklar.nu
-Vi gør din bolig klar.
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Boligklar.nu</title>
 
-Kontakt os
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f2eb;
+            color: #222;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content {
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 90px);
+            font-weight: 600;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 45px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 17px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #444;
+            transform: translateY(-2px);
+        }
+
+        .email {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="content">
+
+            <h1>Boligklar.nu</h1>
+
+            <p class="tagline">
+                Vi gør din bolig klar.
+            </p>
+
+            <a class="button" href="mailto:info@boligklar.nu">
+                Kontakt os
+            </a>
+
+            <p class="email">
+                info@boligklar.nu
+            </p>
+
+        </div>
+    </section>
+
+</body>
+</html>
