@@ -73,8 +73,8 @@
       min-height: 100svh;
       color: var(--white);
       background:
-        radial-gradient(circle at 78% 24%, rgba(184,154,106,.22), transparent 31%),
-        linear-gradient(135deg, #111a15 0%, var(--green) 56%, #243128 100%);
+        linear-gradient(90deg, rgba(17,26,21,.94) 0%, rgba(23,34,28,.82) 48%, rgba(23,34,28,.28) 100%),
+        url("images/boligklar-hero.jpg") center/cover no-repeat;
       display: grid;
       place-items: center;
       position: relative;
@@ -251,6 +251,20 @@
     .principle h3 { font-size: 20px; margin: 38px 0 12px; }
     .principle p { color: #68716b; font-size: 15px; }
 
+    .showcase { background: var(--cream); padding: 110px 0; }
+    .showcase-head { max-width: 760px; margin-bottom: 48px; }
+    .showcase-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 18px; }
+    .showcase-grid img { width: 100%; height: 100%; min-height: 270px; object-fit: cover; display: block; }
+    .showcase-main { min-height: 560px; }
+    .showcase-side { display: grid; gap: 18px; }
+    .downloads { background: var(--white); padding: 105px 0; }
+    .download-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; margin-top: 42px; }
+    .download-card { border: 1px solid #ded7ca; padding: 38px; text-decoration: none; background: var(--white); transition: .2s; }
+    .download-card:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .download-card small { color: #75664d; text-transform: uppercase; letter-spacing: .15em; }
+    .download-card h3 { margin: 18px 0 10px; font-family: Georgia, serif; font-size: 28px; font-weight: 400; }
+    .download-card span { color: #68716b; }
+
     .contact {
       background: var(--sand);
       padding: 105px 0;
@@ -319,7 +333,10 @@
       .hero-grid { gap: 55px; }
       .hero-card { min-height: 330px; max-width: 490px; width: 100%; margin: auto; }
       .section-grid { gap: 25px; }
-      .principles { grid-template-columns: 1fr; }
+      .principles, .download-grid { grid-template-columns: 1fr; }
+      .showcase-grid { grid-template-columns: 1fr; }
+      .showcase-main { min-height: 360px; }
+      .showcase-side { grid-template-columns: 1fr 1fr; }
       .principle { min-height: auto; }
       .contact-card { border-left: 0; border-top: 1px solid rgba(255,255,255,.18); padding: 28px 0 0; }
     }
@@ -331,7 +348,8 @@
       .hero { padding-top: 112px; }
       .actions { flex-direction: column; }
       .button { width: 100%; }
-      .promise, .contact { padding: 75px 0; }
+      .promise, .showcase, .downloads, .contact { padding: 75px 0; }
+      .showcase-side { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -399,6 +417,42 @@
             <h3>Fokus på helheden</h3>
             <p>Vi arbejder med blik for både de praktiske detaljer og det samlede udtryk.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="billeder">
+      <div class="container">
+        <div class="showcase-head">
+          <p class="section-label">Boligen i fokus</p>
+          <h2>Et gennemført udtryk, der skaber et stærkt førstehåndsindtryk.</h2>
+          <p class="body-copy">Billederne kan udskiftes direkte i GitHub ved at lægge dine egne filer i mappen <strong>images</strong> med navnene nedenfor.</p>
+        </div>
+        <div class="showcase-grid">
+          <img class="showcase-main" src="images/boligklar-1.jpg" alt="Præsentation af en bolig" loading="lazy">
+          <div class="showcase-side">
+            <img src="images/boligklar-2.jpg" alt="Detalje fra en bolig" loading="lazy">
+            <img src="images/boligklar-3.jpg" alt="Indretning og boligdetaljer" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads" id="flyers">
+      <div class="container">
+        <p class="section-label">Materiale</p>
+        <h2>Læs mere om Boligklar.nu</h2>
+        <div class="download-grid">
+          <a class="download-card" href="flyers/boligklar-flyer-1.pdf" target="_blank" rel="noopener">
+            <small>PDF · Flyer 01</small>
+            <h3>Se vores flyer</h3>
+            <span>Åbn eller download PDF →</span>
+          </a>
+          <a class="download-card" href="flyers/boligklar-flyer-2.pdf" target="_blank" rel="noopener">
+            <small>PDF · Flyer 02</small>
+            <h3>Se mere om løsningen</h3>
+            <span>Åbn eller download PDF →</span>
+          </a>
         </div>
       </div>
     </section>
