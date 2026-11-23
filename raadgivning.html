@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17221c">
+
+  <meta name="description"
+        content="Læs om Boligklar.nu's personlige rådgivningspakke ved boligkøb, boligsalg og nybyggeri. Pris 2.995 kr. inkl. moms.">
+
+  <title>Personlig boligrådgivning | Boligklar.nu</title>
+
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+
+    .bk-detail {
+      background: #fffdf8;
+      padding: 78px 0 90px;
+      color: #17221c;
+    }
+
+    .bk-detail .bk-back {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: #243229;
+      text-underline-offset: 4px;
+    }
+
+    .bk-detail-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .bk-detail-header > div:first-child {
+      max-width: 690px;
+    }
+
+    .bk-detail-header h1 {
+      font-size: clamp(35px, 5vw, 56px);
+      line-height: 1.13;
+      margin: 12px 0 18px;
+    }
+
+    .bk-detail-header p {
+      line-height: 1.7;
+    }
+
+    .bk-detail-price {
+      flex: 0 0 auto;
+      padding: 26px 30px;
+      border: 1px solid #ded7ca;
+      background: #f4f0e7;
+    }
+
+    .bk-detail-price strong {
+      display: block;
+      font-size: clamp(30px, 4vw, 42px);
+      white-space: nowrap;
+    }
+
+    .bk-detail-price span {
+      display: block;
+      margin-top: 5px;
+    }
+
+    .bk-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .bk-detail-item {
+      padding: 27px;
+      background: #f4f0e7;
+      border: 1px solid #ded7ca;
+    }
+
+    .bk-detail-item h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+
+    .bk-detail-item p {
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .bk-detail-cta {
+      background: #17221c;
+      color: #fffdf8;
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .bk-detail-cta h2 {
+      color: #fffdf8;
+      margin: 0 0 10px;
+      font-size: 27px;
+    }
+
+    .bk-detail-cta p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .bk-detail-cta .button {
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 760px) {
+
+      .bk-detail {
+        padding: 48px 0 60px;
+      }
+
+      .bk-detail-header {
+        display: block;
+      }
+
+      .bk-detail-price {
+        margin-top: 24px;
+        width: fit-content;
+      }
+
+      .bk-detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bk-detail-cta {
+        display: block;
+      }
+
+      .bk-detail-cta .button {
+        display: inline-block;
+        margin-top: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="index.html" class="nav-img">
+        <img src="images/Logo.png" alt="Boligklar.nu">
+      </a>
+
+      <a class="nav-link" href="index.html#kontakt">
+        Kontakt os
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="bk-detail">
+      <div class="container">
+
+        <a class="bk-back" href="index.html">
+          ← Tilbage til forsiden
+        </a>
+
+        <!-- INTRODUKTION OG PRIS -->
+
+        <div class="bk-detail-header">
+
+          <div>
+
+            <p class="section-label">
+              Rådgivningspakke
+            </p>
+
+            <h1>
+              Et personligt møde.
+              Et klarere overblik.
+            </h1>
+
+            <p>
+              Vi mødes om dine planer for køb, salg eller byggeri.
+
+              Sammen gennemgår vi boligen eller dine tegninger
+              og ser på relevante muligheder og forbedringer.
+
+              Efter mødet får du en skriftlig rapport
+              med vores anbefalinger.
+            </p>
+
+          </div>
+
+          <div class="bk-detail-price"
+               aria-label="Pris 2.995 kroner inklusive moms">
+
+            <strong>2.995 kr.</strong>
+            <span>inkl. moms</span>
+
+          </div>
+
+        </div>
+
+        <!-- RÅDGIVNINGSPAKKENS SEKS PUNKTER -->
+
+        <div class="bk-detail-grid">
+
+          <article class="bk-detail-item">
+
+            <h2>Besøg, når det passer dig</h2>
+
+            <p>
+              Vores konsulent besøger dig på et aftalt tidspunkt
+              mellem kl. 06.00 og 21.00.
+            </p>
+
+          </article>
+
+          <article class="bk-detail-item">
+
+            <h2>En samtale om dine planer</h2>
+
+            <p>
+              Vi taler om den proces, der gerne skal føre til
+              køb, salg eller byggeri.
+            </p>
+
+          </article>
+
+          <article class="bk-detail-item">
+
+            <h2>Gennemgang ved køb eller salg</h2>
+
+            <p>
+              Vi gennemgår boligen både udvendigt og indvendigt,
+              eventuelt med udgangspunkt i tegninger.
+            </p>
+
+          </article>
+
+          <article class="bk-detail-item">
+
+            <h2>Gennemgang ved nybyggeri</h2>
+
+            <p>
+              Vi gennemgår tegningerne sammen med dig som bygherre
+              med fokus på muligheder, der ikke nødvendigvis er synlige,
+              eller som byggefirmaet ikke har nævnt.
+            </p>
+
+          </article>
+
+          <article class="bk-detail-item">
+
+            <h2>Rapport efter 1–2 dage</h2>
+
+            <p>
+              Du modtager en rapport med anbefalinger
+              til ændringer og forbedringer med fokus
+              på de muligheder, vi ser –
+              uanset om det handler om køb, salg eller byggeri.
+            </p>
+
+          </article>
+
+          <article class="bk-detail-item">
+
+            <h2>Hjælp til håndværkerpriser</h2>
+
+            <p>
+              Ved behov hjælper vi gerne med at indhente priser
+              hos håndværkere, så boligen kan stå skarpt,
+              inden den kommer på markedet.
+            </p>
+
+          </article>
+
+        </div>
+
+        <!-- KONTAKT -->
+
+        <div class="bk-detail-cta">
+
+          <div>
+
+            <h2>Har du spørgsmål til din bolig?</h2>
+
+            <p>
+              Kontakt Henrik for en uforpligtende dialog om,
+              hvad Boligklar.nu kan gøre for din handel.
+            </p>
+
+          </div>
+
+          <a class="button button-primary"
+             href="mailto:info@boligklar.nu?subject=Foresp%C3%B8rgsel%20om%20boligr%C3%A5dgivning">
+
+            Kontakt os om rådgivning
+
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container footer-row">
+
+      <span>
+        © <span id="year"></span> Boligklar.nu
+      </span>
+
+      <span>
+        Vi hjælper dig videre med dine boligplaner.
+      </span>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
