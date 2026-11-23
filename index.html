@@ -39,6 +39,33 @@
       .bk-price { margin-top: 24px; max-width: 310px; }
       .bk-service { padding: 24px; }
     }
+
+    /* Spørgsmål ved køb, salg og byggeri */
+    .bk-questions { padding: 90px 0; background: #fffdf8; }
+    .bk-questions-head { max-width: 780px; margin-bottom: 35px; }
+    .bk-questions-head .section-label { margin-bottom: 18px; }
+    .bk-questions-head p:last-child { color: #59615c; font-size: 18px; line-height: 1.7; }
+    .bk-accordion { display: grid; gap: 12px; }
+    .bk-accordion details { background: #f4f0e7; border: 1px solid #ded7ca; }
+    .bk-accordion summary { cursor: pointer; list-style: none; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 20px; color: #17221c; }
+    .bk-accordion summary::-webkit-details-marker { display: none; }
+    .bk-accordion summary::after { content: "+"; color: #8b714b; font-size: 30px; font-weight: 400; line-height: 1; }
+    .bk-accordion details[open] summary::after { content: "−"; }
+    .bk-accordion summary:focus-visible { outline: 3px solid #b89a6a; outline-offset: 3px; }
+    .bk-question-content { padding: 0 28px 27px; }
+    .bk-question-content ul { padding-left: 23px; display: grid; gap: 15px; }
+    .bk-question-content li { padding-left: 4px; color: #38453d; line-height: 1.7; }
+    .bk-questions-cta { margin-top: 30px; padding: 28px 30px; background: #17221c; color: #fffdf8; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .bk-questions-cta p { max-width: 660px; }
+    .bk-questions-cta .button { flex-shrink: 0; }
+    @media (max-width: 760px) {
+      .bk-questions { padding: 52px 0; }
+      .bk-questions-head p:last-child { font-size: 16px; }
+      .bk-accordion summary { padding: 20px; font-size: 18px; }
+      .bk-question-content { padding: 0 20px 22px; }
+      .bk-questions-cta { flex-direction: column; align-items: stretch; padding: 24px; }
+      .bk-questions-cta .button { text-align: center; }
+    }
   </style>
 </head>
 <body>
@@ -98,6 +125,62 @@
           <article class="bk-service"><span class="number">01</span><h3>Boligkøb</h3><p>Vi gennemgår boligen ude og inde, eventuelt med udgangspunkt i tegninger, og drøfter mulige ændringer og forbedringer.</p></article>
           <article class="bk-service"><span class="number">02</span><h3>Boligsalg</h3><p>Vi ser på boligens muligheder og anbefaler ændringer, der kan være relevante, inden boligen kommer på markedet.</p></article>
           <article class="bk-service"><span class="number">03</span><h3>Nybyggeri</h3><p>Vi gennemgår dine byggetegninger sammen med dig og ser på muligheder, som måske ikke er blevet præsenteret af byggefirmaet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bk-questions" id="spoergsmaal" aria-labelledby="bk-questions-title">
+      <div class="container">
+        <div class="bk-questions-head">
+          <p class="section-label">Konkrete spørgsmål. Personlig rådgivning.</p>
+          <h2 id="bk-questions-title">Hvilke spørgsmål kan vi hjælpe dig med?</h2>
+          <p>Uanset om du skal købe, sælge eller bygge, kan vi hjælpe dig med at få øje på muligheder og vigtige overvejelser. Her er nogle af de spørgsmål, vi kan drøfte sammen.</p>
+        </div>
+        <div class="bk-accordion">
+          <details open>
+            <summary>Køb af bolig</summary>
+            <div class="bk-question-content">
+              <ul>
+                <li>Boligen har den rigtige pris og beliggenhed – men kan planløsningen ændres, så den passer bedre til dine behov?</li>
+                <li>Hvad koster det at udskifte ældre lofter og eventuelt integrere LED-spots eller LED-skinner?</li>
+                <li>Kan køkkenet opgraderes uden at sprænge budgettet, og hvilke opgaver kan du selv udføre?</li>
+                <li>Hvad koster det at renovere slidte gulve, og er sildebensparket nødvendigvis en dyr løsning?</li>
+                <li>Kan stikkontakter udskiftes, hvor kan der etableres spots, og hvilket elarbejde må du selv udføre?</li>
+                <li>Kan køkken-alrummet åbnes til kip?</li>
+                <li>Er en tilbygning mulig, og hvad kan den forventes at koste pr. m²?</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>Salg af bolig</summary>
+            <div class="bk-question-content">
+              <ul>
+                <li>Hvor meget bør du rydde op eller fjerne inden fotografering og fremvisning?</li>
+                <li>Hvilke fejl og mangler i tilstandsrapporten og elinstallationsrapporten kan det betale sig at udbedre inden salget?</li>
+                <li>Bør gulvene lakeres, eller skal væggene males inden salget?</li>
+                <li>Bør du indhente vurderinger fra flere ejendomsmæglere, og er den højeste vurdering altid den bedste?</li>
+                <li>Hvilken betydning har overtagelsesdatoen for et salg?</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>Nybyggeri</summary>
+            <div class="bk-question-content">
+              <ul>
+                <li>Er det Wi-Fi, der følger med huset, tilstrækkeligt, og kan ekstra adgangspunkter skjules?</li>
+                <li>Hvor bør ventilationsanlægget placeres?</li>
+                <li>Er træstolper i hulmuren en hensigtsmæssig løsning?</li>
+                <li>Er kritiske samlinger tilstrækkeligt forstærket, eksempelvis ved konstruktioner med loft til kip?</li>
+                <li>Hvilken størrelse køkkenvask passer bedst til dine behov?</li>
+                <li>Kan en opvaskemaskine installeres andre steder end i et standardmodul på 60 cm?</li>
+                <li>Bør du vælge døre med ekstra lydisolering eller lydisolerende glas i vinduerne?</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+        <div class="bk-questions-cta">
+          <p>Kontakt Henrik for en uforpligtende dialog om, hvad Boligklar.nu kan gøre for din handel.</p>
+          <a class="button button-primary" href="tel:+4593966962">Ring til Henrik</a>
         </div>
       </div>
     </section>
