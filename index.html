@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 
   <style>
-    /* Eksisterende styling bevares i style.css */
+    /* Nye sektioner – eksisterende styles i style.css bevares */
 
     .bk-services {
       padding: 76px 0;
@@ -52,7 +52,7 @@
       line-height: 1.7;
     }
 
-    /* Kort introduktion til rådgivningen – uden pris */
+    /* Rådgivningsafsnit – uden pris */
 
     .bk-package {
       padding: 78px 0;
@@ -86,7 +86,7 @@
       flex-wrap: wrap;
     }
 
-    /* Spørgsmål om køb, salg og nybyggeri */
+    /* Spørgsmål om køb, salg og byggeri */
 
     .bk-questions {
       padding: 90px 0;
@@ -237,26 +237,28 @@
 
 <body>
 
+  <!-- HEADER MED LOGO -->
+
   <header>
     <div class="container nav">
       <a href="#top" class="nav-img">
         <img src="images/Logo.png" alt="Boligklar.nu">
       </a>
 
-      <a class="nav-link" href="#kontakt">Kontakt os</a>
+      <a class="nav-link" href="#kontakt">
+        Kontakt os
+      </a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- HERO -->
+    <!-- HERO – EKSTRA BOLIGKLAR.NU-TEKST ER FJERNET -->
 
     <section class="hero">
       <div class="container hero-grid">
 
         <div>
-          <p class="kicker">Boligklar.nu</p>
-
           <h1>
             Se mulighederne i din bolig –
             før du tager <span>næste skridt.</span>
@@ -282,9 +284,7 @@
         <div class="hero-card" aria-label="Boligklar.nu">
           <div>
             <div class="house-mark" aria-hidden="true"></div>
-
             <strong>Klar til næste skridt</strong>
-
             <p>
               Fortæl os om dine planer –
               uanset om du skal købe, sælge eller bygge.
@@ -412,7 +412,6 @@
       <div class="container">
 
         <div class="bk-questions-head">
-
           <p class="section-label">
             Konkrete spørgsmål. Personlig rådgivning.
           </p>
@@ -425,11 +424,8 @@
             Uanset om du skal købe, sælge eller bygge,
             kan vi hjælpe dig med at få øje på muligheder
             og vigtige overvejelser.
-
-            Her er nogle af de spørgsmål,
-            vi kan drøfte sammen.
+            Her er nogle af de spørgsmål, vi kan drøfte sammen.
           </p>
-
         </div>
 
         <div class="bk-accordion">
@@ -574,7 +570,7 @@
       </div>
     </section>
 
-    <!-- RÅDGIVNING – UDEN PRIS -->
+    <!-- RÅDGIVNING – UDEN PRIS PÅ FORSIDEN -->
 
     <section class="bk-package"
              id="raadgivning"
@@ -595,7 +591,6 @@
             <p>
               Vi hjælper dig med at se mulighederne i din bolig –
               uanset om du skal købe, sælge eller bygge.
-
               Læs om vores rådgivningsforløb,
               og hvad du får med.
             </p>
@@ -617,7 +612,6 @@
       <div class="container">
 
         <p class="section-label">Materiale</p>
-
         <h2>Læs mere om Boligklar.nu</h2>
 
         <div class="download-grid">
@@ -626,7 +620,6 @@
              href="images/boligklar-flyer-1.png"
              target="_blank"
              rel="noopener">
-
             <small>Flyer</small>
             <h3>Se vores flyer</h3>
             <span>Åbn eller download →</span>
@@ -636,7 +629,6 @@
              href="images/boligklar-flyer-2.png"
              target="_blank"
              rel="noopener">
-
             <small>Flyer</small>
             <h3>Se mere om løsningen</h3>
             <span>Åbn eller download →</span>
@@ -694,15 +686,12 @@
 
   </main>
 
+  <!-- FOOTER -->
+
   <footer>
     <div class="container footer-row">
-      <span>
-        © <span id="year"></span> Boligklar.nu
-      </span>
-
-      <span>
-        Vi hjælper dig videre med dine boligplaner.
-      </span>
+      <span>© <span id="year"></span> Boligklar.nu</span>
+      <span>Vi hjælper dig videre med dine boligplaner.</span>
     </div>
   </footer>
 
