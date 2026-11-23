@@ -1,154 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#17221c">
-    <meta name="description" content="Boligklar.nu – vi gør din bolig klar. Kontakt os for en uforpligtende dialog.">
-
-    <title>Boligklar.nu | Vi gør din bolig klar til salg</title>
-
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-  </head>
-
-  <body>
-    <header>
-      <div class="container nav">
-        <a href="#top" class="nav-img">
-          <img src="images/Logo.png" alt="Boligklar.nu">
-        </a>
-
-        <a class="nav-link" href="#kontakt">Kontakt os</a>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17221c">
+  <meta name="description" content="Boligklar.nu tilbyder personlig boligrådgivning ved køb, salg og nybyggeri. Konsulentbesøg og rapport med anbefalinger for 2.995 kr. inkl. moms.">
+  <title>Boligklar.nu | Rådgivning ved boligkøb, boligsalg og nybyggeri</title>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <style>
+    /* Nye sektioner alene: eksisterende styles i /css/style.css bevares. */
+    .bk-services { padding: 76px 0; }
+    .bk-services-intro { max-width: 740px; margin-bottom: 34px; }
+    .bk-services-intro p:last-child { line-height: 1.7; }
+    .bk-service-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+    .bk-service { padding: 30px; border: 1px solid rgba(23,34,28,.18); border-radius: 5px; }
+    .bk-service .number { display: block; margin-bottom: 18px; }
+    .bk-service h3 { margin: 0 0 12px; }
+    .bk-service p { margin: 0; line-height: 1.7; }
+    .bk-package { padding: 78px 0; background: #f5f5f0; color: #17221c; }
+    .bk-package-heading { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 34px; }
+    .bk-package-heading > div:first-child { max-width: 680px; }
+    .bk-package-heading h2 { margin-bottom: 14px; }
+    .bk-package-heading p { line-height: 1.7; }
+    .bk-price { min-width: 235px; padding: 24px 26px; background: #fff; border: 1px solid rgba(23,34,28,.14); }
+    .bk-price strong { display: block; font-size: clamp(29px, 3vw, 39px); line-height: 1.15; white-space: nowrap; }
+    .bk-price span { display: block; margin-top: 7px; font-size: 14px; }
+    .bk-inclusions { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-bottom: 30px; }
+    .bk-inclusion { padding: 23px 25px; background: #fff; border: 1px solid rgba(23,34,28,.1); }
+    .bk-inclusion h3 { margin: 0 0 9px; font-size: 19px; }
+    .bk-inclusion p { margin: 0; line-height: 1.65; }
+    .bk-package-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      .bk-services, .bk-package { padding: 52px 0; }
+      .bk-service-grid, .bk-inclusions { grid-template-columns: 1fr; }
+      .bk-package-heading { display: block; }
+      .bk-price { margin-top: 24px; max-width: 310px; }
+      .bk-service { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="nav-img"><img src="images/Logo.png" alt="Boligklar.nu"></a>
+      <a class="nav-link" href="#kontakt">Kontakt os</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Boligklar.nu</p>
+          <h1>Se mulighederne i din bolig – før du tager <span>næste skridt.</span></h1>
+          <p class="lead">Skal du købe, sælge eller bygge? Vi hjælper dig med at få øje på muligheder og forbedringer, så du kan træffe dine beslutninger på et bedre grundlag.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#raadgivning">Se rådgivning og pris</a>
+            <a class="button button-secondary" href="#mere">Læs mere</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Boligklar.nu">
           <div>
-            <p class="kicker">Boligklar.nu</p>
-            <h1>Vi gør din bolig klar til <span>salg.</span></h1>
-
-            <p class="lead">
-              En enkel og professionel vej til en bolig, der står skarpt. Kontakt os, så tager vi en uforpligtende dialog
-              om din bolig.
-            </p>
-
-            <div class="actions">
-              <a class="button button-primary"
-                href="mailto:info@boligklar.nu?subject=Forespørgsel%20fra%20boligklar.nu">Skriv til os</a>
-              <a class="button button-secondary" href="#mere">Læs mere</a>
-            </div>
-          </div>
-
-          <div class="hero-card" aria-label="Boligklar.nu">
-            <div>
-              <div class="house-mark" aria-hidden="true"></div>
-              <strong>Klar til næste skridt</strong>
-              <p>Fortæl os kort om boligen og det, du ønsker hjælp til.</p>
-            </div>
+            <div class="house-mark" aria-hidden="true"></div>
+            <strong>Klar til næste skridt</strong>
+            <p>Fortæl os om dine planer – uanset om du skal købe, sælge eller bygge.</p>
           </div>
         </div>
-      </section>
-
-      <section class="promise" id="mere">
-        <div class="container">
-          <div class="section-grid">
-            <p class="section-label">Vores tilgang</p>
-            <div>
-              <h2>Et godt resultat begynder med et klart overblik.</h2>
-              
-              <p class="body-copy">
-                Hos Boligklar.nu tager vi udgangspunkt i din bolig og dit behov. Du får en personlig dialog, en
-                overskuelig proces og fokus på de detaljer, der får helheden til at fremstå gennemført.
-              </p>
-            </div>
-          </div>
-
-          <div class="principles">
-            <article class="principle">
-              <span class="number">01</span>
-              <h3>Personlig dialog</h3>
-              <p>Vi starter med at forstå boligen, situationen og det ønskede resultat.</p>
-            </article>
-
-            <article class="principle">
-              <span class="number">02</span>
-              <h3>En overskuelig proces</h3>
-              <p>Du får et enkelt forløb med tydelig kommunikation fra start til slut.</p>
-            </article>
-
-            <article class="principle">
-              <span class="number">03</span>
-              <h3>Fokus på helheden</h3>
-              <p>Vi arbejder med blik for både de praktiske detaljer og det samlede udtryk.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="downloads" id="flyers">
-        <div class="container">
-          <p class="section-label">Materiale</p>
-          <h2>Læs mere om Boligklar.nu</h2>
-          <div class="download-grid">
-            <a class="download-card" href="images/boligklar-flyer-1.png" target="_blank" rel="noopener">
-              <small>Flyer</small>
-              <h3>Se vores flyer</h3>
-              <span>Åbn eller download →</span>
-            </a>
-            <a class="download-card" href="images/boligklar-flyer-2.png" target="_blank" rel="noopener">
-              <small>Flyer</small>
-              <h3>Se mere om løsningen</h3>
-              <span>Åbn eller download →</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="kontakt">
-        <div class="container">
-          <div class="contact-box">
-            <div>
-              <p class="section-label">Kontakt</p>
-              
-              <h2>Skal vi gøre din bolig klar til salg?</h2>
-
-              <p class="contact-copy">
-                Send os en mail eller ring til Henrik for en uforpligtende snak om din bolig.
-              </p>
-            </div>
-
-            <div class="contact-card">
-              <small>Kontaktperson</small>
-
-              <p style="font-size: 24px; margin-bottom: 5px;">
-                <strong>Henrik Andersen</strong>
-              </p>
-
-              <p style="margin-bottom: 25px;">
-                <a href="tel:+4593966962" style="color: inherit; text-decoration: none;">
-                  +45 93 96 69 62
-                </a>
-              </p>
-
-              <small>E-mail</small>
-              <a class="email" href="mailto:info@boligklar.nu?subject=Forespørgsel%20fra%20boligklar.nu">info@boligklar.nu</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container footer-row">
-        <span>© <span id="year"></span> Boligklar.nu</span>
-        <span>Vi gør din bolig klar.</span>
       </div>
-    </footer>
+    </section>
 
-    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9b9a0bc5cb804195b2cfb2f1520797e1"}'></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </body>
+    <section class="promise" id="mere">
+      <div class="container">
+        <div class="section-grid">
+          <p class="section-label">Vores tilgang</p>
+          <div>
+            <h2>Et godt resultat begynder med et klart overblik.</h2>
+            <p class="body-copy">Hos Boligklar.nu tager vi udgangspunkt i din bolig, dine tegninger og dine planer. Du får en personlig dialog, en overskuelig proces og konkrete anbefalinger til de muligheder, vi ser.</p>
+          </div>
+        </div>
+        <div class="principles">
+          <article class="principle"><span class="number">01</span><h3>Personlig dialog</h3><p>Vi starter med at forstå boligen, situationen og det ønskede resultat.</p></article>
+          <article class="principle"><span class="number">02</span><h3>En overskuelig proces</h3><p>Du får et enkelt forløb med tydelig kommunikation fra start til slut.</p></article>
+          <article class="principle"><span class="number">03</span><h3>Fokus på mulighederne</h3><p>Vi ser på løsninger og forbedringer, der kan gøre en forskel for dine boligplaner.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bk-services" aria-labelledby="bk-services-title">
+      <div class="container">
+        <div class="bk-services-intro">
+          <p class="section-label">Hvornår kan vi hjælpe?</p>
+          <h2 id="bk-services-title">Rådgivning til køb, salg og byggeri.</h2>
+          <p>Forskellige boligplaner kræver forskellige overvejelser. Vi tager udgangspunkt i din situation og hjælper med at få øje på mulighederne.</p>
+        </div>
+        <div class="bk-service-grid">
+          <article class="bk-service"><span class="number">01</span><h3>Boligkøb</h3><p>Vi gennemgår boligen ude og inde, eventuelt med udgangspunkt i tegninger, og drøfter mulige ændringer og forbedringer.</p></article>
+          <article class="bk-service"><span class="number">02</span><h3>Boligsalg</h3><p>Vi ser på boligens muligheder og anbefaler ændringer, der kan være relevante, inden boligen kommer på markedet.</p></article>
+          <article class="bk-service"><span class="number">03</span><h3>Nybyggeri</h3><p>Vi gennemgår dine byggetegninger sammen med dig og ser på muligheder, som måske ikke er blevet præsenteret af byggefirmaet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bk-package" id="raadgivning" aria-labelledby="bk-package-title">
+      <div class="container">
+        <div class="bk-package-heading">
+          <div>
+            <p class="section-label">Rådgivningspakke</p>
+            <h2 id="bk-package-title">Et personligt møde. Et klarere overblik.</h2>
+            <p>Vi mødes om dine planer for køb, salg eller byggeri. Efter mødet får du en skriftlig rapport med vores anbefalinger.</p>
+          </div>
+          <div class="bk-price" aria-label="Pris 2.995 kroner inklusive moms"><strong>2.995 kr.</strong><span>inkl. moms</span></div>
+        </div>
+        <div class="bk-inclusions">
+          <article class="bk-inclusion"><h3>Besøg, når det passer dig</h3><p>Vores konsulent besøger dig på et aftalt tidspunkt mellem kl. 06.00 og 21.00.</p></article>
+          <article class="bk-inclusion"><h3>En samtale om dine planer</h3><p>Vi taler om den proces, der gerne skal føre til køb, salg eller byggeri.</p></article>
+          <article class="bk-inclusion"><h3>Gennemgang ved køb eller salg</h3><p>Vi gennemgår boligen både udvendigt og indvendigt, eventuelt med udgangspunkt i tegninger.</p></article>
+          <article class="bk-inclusion"><h3>Gennemgang ved nybyggeri</h3><p>Vi gennemgår tegningerne sammen med dig som bygherre med fokus på muligheder, der ikke nødvendigvis er synlige, eller som byggefirmaet ikke har nævnt.</p></article>
+          <article class="bk-inclusion"><h3>Rapport efter 1–2 dage</h3><p>Du modtager en rapport med anbefalinger til ændringer og forbedringer med fokus på de muligheder, vi ser – uanset om det handler om køb, salg eller byggeri.</p></article>
+          <article class="bk-inclusion"><h3>Hjælp til håndværkerpriser</h3><p>Ved behov hjælper vi gerne med at indhente priser hos håndværkere, så boligen kan stå skarpt, inden den kommer på markedet.</p></article>
+        </div>
+        <div class="bk-package-actions"><a class="button button-primary" href="mailto:info@boligklar.nu?subject=Foresp%C3%B8rgsel%20om%20boligr%C3%A5dgivning">Kontakt os om rådgivning</a></div>
+      </div>
+    </section>
+
+    <section class="downloads" id="flyers">
+      <div class="container">
+        <p class="section-label">Materiale</p>
+        <h2>Læs mere om Boligklar.nu</h2>
+        <div class="download-grid">
+          <a class="download-card" href="images/boligklar-flyer-1.png" target="_blank" rel="noopener"><small>Flyer</small><h3>Se vores flyer</h3><span>Åbn eller download →</span></a>
+          <a class="download-card" href="images/boligklar-flyer-2.png" target="_blank" rel="noopener"><small>Flyer</small><h3>Se mere om løsningen</h3><span>Åbn eller download →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <p class="section-label">Kontakt</p>
+            <h2>Skal vi se på dine boligplaner?</h2>
+            <p class="contact-copy">Send os en mail eller ring til Henrik for en uforpligtende snak om køb, salg eller byggeri.</p>
+          </div>
+          <div class="contact-card">
+            <small>Kontaktperson</small>
+            <p style="font-size: 24px; margin-bottom: 5px;"><strong>Henrik Andersen</strong></p>
+            <p style="margin-bottom: 25px;"><a href="tel:+4593966962" style="color: inherit; text-decoration: none;">+45 93 96 69 62</a></p>
+            <small>E-mail</small>
+            <a class="email" href="mailto:info@boligklar.nu?subject=Foresp%C3%B8rgsel%20fra%20boligklar.nu">info@boligklar.nu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-row"><span>© <span id="year"></span> Boligklar.nu</span><span>Vi hjælper dig videre med dine boligplaner.</span></div></footer>
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9b9a0bc5cb804195b2cfb2f1520797e1"}'></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>
