@@ -55,6 +55,12 @@
       line-height: 1.7;
     }
 
+    /* HERO – AFSLUTTENDE OVERSKRIFT */
+
+    body .hero h1 span {
+      display: block;
+    }
+
     /* RÅDGIVNINGSAFSNIT – UDEN PRIS */
 
     .bk-package {
@@ -208,6 +214,17 @@
 
     @media (max-width: 760px) {
 
+      /* Hele den sandfarvede sætning på én linje */
+
+      body .hero h1 span {
+        display: block;
+        font-size: clamp(15px, 5.2vw, 28px);
+        line-height: 1.2;
+        white-space: nowrap;
+        margin-top: 12px;
+        color: var(--sand, #d9cdbb);
+      }
+
       .bk-services,
       .bk-package {
         padding: 52px 0;
@@ -279,7 +296,7 @@
 
   <main id="top">
 
-    <!-- HERO -->
+    <!-- HERO MED OPDATERET OVERSKRIFT -->
 
     <section class="hero">
       <div class="container hero-grid">
@@ -287,8 +304,8 @@
         <div>
 
           <h1>
-            Se mulighederne i din bolig –
-            før du tager <span>næste skridt.</span>
+            Se mulighederne i din bolig
+            <span>– før du tager næste skridt.</span>
           </h1>
 
           <p class="lead">
@@ -649,7 +666,7 @@
 
         </div>
 
-        <!-- OPDATERET KONTAKTFELT UDEN KNAP -->
+        <!-- KONTAKTFELT UDEN KNAP -->
 
         <div class="bk-questions-cta">
 
