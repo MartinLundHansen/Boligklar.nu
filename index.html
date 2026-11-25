@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#17221c">
   <meta name="description" content="Boligklar.nu tilbyder personlig boligrådgivning ved køb, salg og nybyggeri. Konsulentbesøg og rapport med anbefalinger.">
+
   <title>Boligklar.nu | Rådgivning ved boligkøb, boligsalg og nybyggeri</title>
+
   <link rel="icon" type="image/png" href="/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 
   <style>
-    /* Nye sektioner – eksisterende styles i style.css bevares */
+
+    /* RÅDGIVNING TIL KØB, SALG OG NYBYGGERI */
 
     .bk-services {
       padding: 76px 0;
@@ -52,7 +55,7 @@
       line-height: 1.7;
     }
 
-    /* Rådgivningsafsnit – uden pris */
+    /* RÅDGIVNINGSAFSNIT – UDEN PRIS */
 
     .bk-package {
       padding: 78px 0;
@@ -86,7 +89,7 @@
       flex-wrap: wrap;
     }
 
-    /* Spørgsmål om køb, salg og byggeri */
+    /* SPØRGSMÅL OM KØB, SALG OG BYGGERI */
 
     .bk-questions {
       padding: 90px 0;
@@ -168,6 +171,8 @@
       line-height: 1.7;
     }
 
+    /* KONTAKTFELT UNDER SPØRGSMÅL */
+
     .bk-questions-cta {
       margin-top: 30px;
       padding: 28px 30px;
@@ -181,13 +186,28 @@
 
     .bk-questions-cta p {
       max-width: 660px;
+      margin: 0;
+      line-height: 1.7;
     }
 
-    .bk-questions-cta .button {
+    .bk-questions-phone {
+      color: #b89a6a;
+      font-size: 22px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
       flex-shrink: 0;
     }
 
+    .bk-questions-phone:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    /* MOBILVERSION */
+
     @media (max-width: 760px) {
+
       .bk-services,
       .bk-package {
         padding: 52px 0;
@@ -226,12 +246,16 @@
         flex-direction: column;
         align-items: stretch;
         padding: 24px;
+        gap: 16px;
       }
 
-      .bk-questions-cta .button {
-        text-align: center;
+      .bk-questions-phone {
+        font-size: 22px;
+        align-self: flex-start;
       }
+
     }
+
   </style>
 </head>
 
@@ -241,6 +265,7 @@
 
   <header>
     <div class="container nav">
+
       <a href="#top" class="nav-img">
         <img src="images/Logo.png" alt="Boligklar.nu">
       </a>
@@ -248,17 +273,19 @@
       <a class="nav-link" href="#kontakt">
         Kontakt os
       </a>
+
     </div>
   </header>
 
   <main id="top">
 
-    <!-- HERO – EKSTRA BOLIGKLAR.NU-TEKST ER FJERNET -->
+    <!-- HERO -->
 
     <section class="hero">
       <div class="container hero-grid">
 
         <div>
+
           <h1>
             Se mulighederne i din bolig –
             før du tager <span>næste skridt.</span>
@@ -271,6 +298,7 @@
           </p>
 
           <div class="actions">
+
             <a class="button button-primary" href="#raadgivning">
               Læs om rådgivningen
             </a>
@@ -278,18 +306,26 @@
             <a class="button button-secondary" href="#mere">
               Læs mere
             </a>
+
           </div>
+
         </div>
 
         <div class="hero-card" aria-label="Boligklar.nu">
+
           <div>
+
             <div class="house-mark" aria-hidden="true"></div>
+
             <strong>Klar til næste skridt</strong>
+
             <p>
               Fortæl os om dine planer –
               uanset om du skal købe, sælge eller bygge.
             </p>
+
           </div>
+
         </div>
 
       </div>
@@ -301,10 +337,14 @@
       <div class="container">
 
         <div class="section-grid">
+
           <p class="section-label">Vores tilgang</p>
 
           <div>
-            <h2>Et godt resultat begynder med et klart overblik.</h2>
+
+            <h2>
+              Et godt resultat begynder med et klart overblik.
+            </h2>
 
             <p class="body-copy">
               Hos Boligklar.nu tager vi udgangspunkt i din bolig,
@@ -312,49 +352,68 @@
               Du får en personlig dialog, en overskuelig proces
               og konkrete anbefalinger til de muligheder, vi ser.
             </p>
+
           </div>
+
         </div>
 
         <div class="principles">
 
           <article class="principle">
+
             <span class="number">01</span>
+
             <h3>Personlig dialog</h3>
+
             <p>
               Vi starter med at forstå boligen,
               situationen og det ønskede resultat.
             </p>
+
           </article>
 
           <article class="principle">
+
             <span class="number">02</span>
+
             <h3>En overskuelig proces</h3>
+
             <p>
               Du får et enkelt forløb med tydelig kommunikation
               fra start til slut.
             </p>
+
           </article>
 
           <article class="principle">
+
             <span class="number">03</span>
+
             <h3>Fokus på mulighederne</h3>
+
             <p>
               Vi ser på løsninger og forbedringer,
               der kan gøre en forskel for dine boligplaner.
             </p>
+
           </article>
 
         </div>
+
       </div>
     </section>
 
     <!-- KØB, SALG OG NYBYGGERI -->
 
     <section class="bk-services" aria-labelledby="bk-services-title">
+
       <div class="container">
 
         <div class="bk-services-intro">
-          <p class="section-label">Hvornår kan vi hjælpe?</p>
+
+          <p class="section-label">
+            Hvornår kan vi hjælpe?
+          </p>
 
           <h2 id="bk-services-title">
             Rådgivning til køb, salg og byggeri.
@@ -365,41 +424,55 @@
             Vi tager udgangspunkt i din situation og hjælper
             med at få øje på mulighederne.
           </p>
+
         </div>
 
         <div class="bk-service-grid">
 
           <article class="bk-service">
+
             <span class="number">01</span>
+
             <h3>Boligkøb</h3>
+
             <p>
               Vi gennemgår boligen ude og inde,
               eventuelt med udgangspunkt i tegninger,
               og drøfter mulige ændringer og forbedringer.
             </p>
+
           </article>
 
           <article class="bk-service">
+
             <span class="number">02</span>
+
             <h3>Boligsalg</h3>
+
             <p>
               Vi ser på boligens muligheder og anbefaler ændringer,
               der kan være relevante,
               inden boligen kommer på markedet.
             </p>
+
           </article>
 
           <article class="bk-service">
+
             <span class="number">03</span>
+
             <h3>Nybyggeri</h3>
+
             <p>
               Vi gennemgår dine byggetegninger sammen med dig
               og ser på muligheder,
               som måske ikke er blevet præsenteret af byggefirmaet.
             </p>
+
           </article>
 
         </div>
+
       </div>
     </section>
 
@@ -412,6 +485,7 @@
       <div class="container">
 
         <div class="bk-questions-head">
+
           <p class="section-label">
             Konkrete spørgsmål. Personlig rådgivning.
           </p>
@@ -426,17 +500,21 @@
             og vigtige overvejelser.
             Her er nogle af de spørgsmål, vi kan drøfte sammen.
           </p>
+
         </div>
 
         <div class="bk-accordion">
 
-          <!-- KØB -->
+          <!-- KØB AF BOLIG -->
 
           <details open>
+
             <summary>Køb af bolig</summary>
 
             <div class="bk-question-content">
+
               <ul>
+
                 <li>
                   Boligen har den rigtige pris og beliggenhed –
                   men kan planløsningen ændres,
@@ -472,17 +550,23 @@
                   Er en tilbygning mulig,
                   og hvad kan den forventes at koste pr. m²?
                 </li>
+
               </ul>
+
             </div>
+
           </details>
 
-          <!-- SALG -->
+          <!-- SALG AF BOLIG -->
 
           <details>
+
             <summary>Salg af bolig</summary>
 
             <div class="bk-question-content">
+
               <ul>
+
                 <li>
                   Hvor meget bør du rydde op eller fjerne
                   inden fotografering og fremvisning?
@@ -507,17 +591,23 @@
                 <li>
                   Hvilken betydning har overtagelsesdatoen for et salg?
                 </li>
+
               </ul>
+
             </div>
+
           </details>
 
           <!-- NYBYGGERI -->
 
           <details>
+
             <summary>Nybyggeri</summary>
 
             <div class="bk-question-content">
+
               <ul>
+
                 <li>
                   Er det Wi-Fi, der følger med huset,
                   tilstrækkeligt, og kan ekstra adgangspunkter skjules?
@@ -550,27 +640,38 @@
                   Bør du vælge døre med ekstra lydisolering
                   eller lydisolerende glas i vinduerne?
                 </li>
+
               </ul>
+
             </div>
+
           </details>
 
         </div>
 
+        <!-- OPDATERET KONTAKTFELT UDEN KNAP -->
+
         <div class="bk-questions-cta">
+
           <p>
-            Kontakt Henrik for en uforpligtende dialog om,
+            Kontakt os for en uforpligtende dialog om,
             hvad Boligklar.nu kan gøre for din handel.
           </p>
 
-          <a class="button button-primary" href="tel:+4593966962">
-            Ring til Henrik
+          <a class="bk-questions-phone"
+             href="tel:+4593966962"
+             aria-label="Ring på telefon 93 96 69 62">
+
+            +45 93 96 69 62
+
           </a>
+
         </div>
 
       </div>
     </section>
 
-    <!-- RÅDGIVNING – UDEN PRIS PÅ FORSIDEN -->
+    <!-- PERSONLIG BOLIGRÅDGIVNING – UDEN PRIS -->
 
     <section class="bk-package"
              id="raadgivning"
@@ -579,7 +680,9 @@
       <div class="container">
 
         <div class="bk-package-heading">
+
           <div>
+
             <p class="section-label">
               Personlig boligrådgivning
             </p>
@@ -594,13 +697,17 @@
               Læs om vores rådgivningsforløb,
               og hvad du får med.
             </p>
+
           </div>
+
         </div>
 
         <div class="bk-package-actions">
+
           <a class="button button-primary" href="raadgivning.html">
             Læs mere om rådgivningen
           </a>
+
         </div>
 
       </div>
@@ -609,9 +716,11 @@
     <!-- FLYERS -->
 
     <section class="downloads" id="flyers">
+
       <div class="container">
 
         <p class="section-label">Materiale</p>
+
         <h2>Læs mere om Boligklar.nu</h2>
 
         <div class="download-grid">
@@ -620,32 +729,43 @@
              href="images/boligklar-flyer-1.png"
              target="_blank"
              rel="noopener">
+
             <small>Flyer</small>
+
             <h3>Se vores flyer</h3>
+
             <span>Åbn eller download →</span>
+
           </a>
 
           <a class="download-card"
              href="images/boligklar-flyer-2.png"
              target="_blank"
              rel="noopener">
+
             <small>Flyer</small>
+
             <h3>Se mere om løsningen</h3>
+
             <span>Åbn eller download →</span>
+
           </a>
 
         </div>
+
       </div>
     </section>
 
     <!-- KONTAKT -->
 
     <section class="contact" id="kontakt">
+
       <div class="container">
 
         <div class="contact-box">
 
           <div>
+
             <p class="section-label">Kontakt</p>
 
             <h2>Skal vi se på dine boligplaner?</h2>
@@ -654,6 +774,7 @@
               Send os en mail eller ring til Henrik
               for en uforpligtende snak om køb, salg eller byggeri.
             </p>
+
           </div>
 
           <div class="contact-card">
@@ -665,20 +786,27 @@
             </p>
 
             <p style="margin-bottom: 25px;">
+
               <a href="tel:+4593966962"
                  style="color: inherit; text-decoration: none;">
+
                 +45 93 96 69 62
+
               </a>
+
             </p>
 
             <small>E-mail</small>
 
             <a class="email"
                href="mailto:info@boligklar.nu?subject=Foresp%C3%B8rgsel%20fra%20boligklar.nu">
+
               info@boligklar.nu
+
             </a>
 
           </div>
+
         </div>
 
       </div>
@@ -689,11 +817,22 @@
   <!-- FOOTER -->
 
   <footer>
+
     <div class="container footer-row">
-      <span>© <span id="year"></span> Boligklar.nu</span>
-      <span>Vi hjælper dig videre med dine boligplaner.</span>
+
+      <span>
+        © <span id="year"></span> Boligklar.nu
+      </span>
+
+      <span>
+        Vi hjælper dig videre med dine boligplaner.
+      </span>
+
     </div>
+
   </footer>
+
+  <!-- CLOUDFLARE ANALYTICS -->
 
   <script
     type="module"
