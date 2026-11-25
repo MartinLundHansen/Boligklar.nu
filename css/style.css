@@ -620,3 +620,119 @@ body .bk-package .button-primary:hover {
     padding: 22px;
   }
 }
+
+
+/* =========================================
+   BOLIGKLAR.NU – RETTET MOBILVERSION
+   ========================================= */
+
+@media (max-width: 850px) {
+
+  /* Logo og header */
+
+  body:has(.hero) > header {
+    position: absolute;
+    inset: 0 0 auto 0;
+    padding: 24px 0 0;
+    z-index: 10;
+  }
+
+  body:has(.hero) .nav {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body:has(.hero) .nav-img {
+    display: block;
+    width: 170px;
+    max-width: 65%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  body:has(.hero) .nav-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  body:has(.hero) .nav-link {
+    display: none;
+  }
+
+  /* Afstand mellem logo og overskrift */
+
+  body .hero {
+    padding-top: 150px;
+    padding-bottom: 65px;
+    min-height: auto;
+    align-items: start;
+  }
+
+  body .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    align-items: start;
+  }
+
+  /* Overskrift */
+
+  body .hero h1 {
+    font-size: clamp(36px, 10vw, 54px);
+    line-height: 1.06;
+    letter-spacing: -.035em;
+    margin: 0;
+    overflow-wrap: normal;
+  }
+
+  body .hero h1 span {
+    font-size: .72em;
+    line-height: 1.15;
+    margin-top: 12px;
+    color: var(--sand);
+  }
+
+  /* Introduktionstekst */
+
+  body .hero .lead {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 26px 0 30px;
+  }
+
+  /* Knapper */
+
+  body .hero .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  body .hero .actions .button {
+    width: 100%;
+    min-height: 54px;
+    text-align: center;
+  }
+
+}
+
+/* Ekstra tilpasning til mindre mobiltelefoner */
+
+@media (max-width: 520px) {
+
+  body .hero .container {
+    width: calc(100% - 36px);
+  }
+
+  body .hero h1 {
+    font-size: clamp(32px, 9.8vw, 46px);
+    line-height: 1.06;
+  }
+
+  body .hero-card {
+    min-height: 280px;
+    padding: 35px 24px;
+  }
+
+}
