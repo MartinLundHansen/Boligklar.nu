@@ -93,30 +93,54 @@
       line-height: 1.7;
     }
 
+    /* KONTAKTSEKTION */
+
     .bk-detail-cta {
       background: #17221c;
       color: #fffdf8;
-      padding: 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
+      padding: 36px;
     }
 
     .bk-detail-cta h2 {
       color: #fffdf8;
-      margin: 0 0 10px;
+      margin: 0 0 14px;
       font-size: 27px;
     }
 
     .bk-detail-cta p {
       margin: 0;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
-    .bk-detail-cta .button {
-      flex-shrink: 0;
+    .bk-detail-contact {
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, .20);
     }
+
+    .bk-detail-contact strong {
+      display: block;
+      font-size: 21px;
+      margin-bottom: 10px;
+      color: #fffdf8;
+    }
+
+    .bk-detail-contact p {
+      margin-bottom: 5px;
+    }
+
+    .bk-detail-contact a {
+      color: #fffdf8;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .bk-detail-contact a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* MOBILVERSION */
 
     @media (max-width: 760px) {
 
@@ -138,13 +162,9 @@
       }
 
       .bk-detail-cta {
-        display: block;
+        padding: 26px;
       }
 
-      .bk-detail-cta .button {
-        display: inline-block;
-        margin-top: 22px;
-      }
     }
 
   </style>
@@ -290,27 +310,36 @@
 
         </div>
 
-        <!-- KONTAKT -->
+        <!-- KONTAKTSEKTION UDEN EKSTRA KNAP -->
 
         <div class="bk-detail-cta">
 
-          <div>
+          <h2>Har du spørgsmål til din bolig?</h2>
 
-            <h2>Har du spørgsmål til din bolig?</h2>
+          <p>
+            Kontakt Henrik for en uforpligtende dialog om,
+            hvad Boligklar.nu kan gøre for din handel.
+          </p>
+
+          <div class="bk-detail-contact">
+
+            <strong>Henrik Andersen</strong>
 
             <p>
-              Kontakt Henrik for en uforpligtende dialog om,
-              hvad Boligklar.nu kan gøre for din handel.
+              Telefon:
+              <a href="tel:+4593966962">
+                +45 93 96 69 62
+              </a>
+            </p>
+
+            <p>
+              E-mail:
+              <a href="mailto:info@boligklar.nu">
+                info@boligklar.nu
+              </a>
             </p>
 
           </div>
-
-          <a class="button button-primary"
-             href="mailto:info@boligklar.nu?subject=Foresp%C3%B8rgsel%20om%20boligr%C3%A5dgivning">
-
-            Kontakt os om rådgivning
-
-          </a>
 
         </div>
 
